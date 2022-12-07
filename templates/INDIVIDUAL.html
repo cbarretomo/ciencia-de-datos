@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANCO DE COLOMBIA</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>BANCO<b>COLOMBIA</b></h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="menu-selected"><a href="/" class="text-menu-selected">INDIVIDUAL</a></li>
+                        <li><a href="/DOCUMENTO">DOCUMENTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 align="center">CONSULTA INDIVIDUAL</h2>
+    <br>
+    <p>Por favor ingrese todos los datos requeridos del cliente</p>
+    <br>
+    <form id = "myForm" action="/" method="POST">
+        <p> Sexo: <input type="radio" name="SexoDesc" value=0>Hombre <input type="radio" name="SexoDesc" value=1>Mujer</p>
+        <br>
+        <p>Edad: <input type="integer" name="Edad"></p>
+        <br>
+        <p> Estado Civil: <select name="EstadoCivilDesc">
+            <option selected>...</option>
+            <option value=0>SOLTERO</option>
+            <option value=1>CASADO</option>
+            <option value=2>UNION LIBRE</option>
+            <option value=3>SEPARADO</option>
+            <option value=5>VIUDO</option>
+            <option value=6>DIVORCIADO</option>
+            <option value=7>NO REPORTA</option> </select></p>
+        <br>
+        <p>Profesión: <select name="ProfesionDesc">
+            <option selected>...</option>
+            <option value=0>SIN PROFESION</option>
+            <option value=1>ZOOTECNISTA</option>
+            <option value=2>AGRICULTOR</option>
+            <option value=3>DOCENTE</option>
+            <option value=4>AGRONOMO</option>
+            <option value=5>GANADERO</option>
+            <option value=6>TECNICO PROFESIONAL - AGRONOMIA, VETERINARIA Y AFINES</option>
+            <option value=7>ADMINISTRADOR DEL MEDIO AMBIENTE</option> 
+            <option value=8>ADMINISTRADOR AGROPECUARIO</option> 
+            <option value=9>ADMINISTRADOR DE COMERCIO EXTERIOR</option> 
+            <option value=10>TECNICO PROFESIONAL - ECONOMIA, ADMINISTRACION Y CONTADURIA</option> 
+            <option value=11>ADMINISTRADOR DE  EMPRESAS</option> 
+            <option value=12>INGENIERO CIVIL</option> 
+            <option value=13>ABOGADO</option> 
+            <option value=14>MEDICO VETERINARIO</option> 
+            <option value=15>TECNOLOGO - INGENIERIA, ARQUITECTURA, URBANISMO Y AFINES</option> 
+            <option value=16>TECNOLOGO - AGRONOMIA, VETERINARIA Y AFINES</option> 
+            <option value=17>INGENIERO AGRONOMICO</option> 
+            <option value=18>CONTADOR</option> 
+            <option value=19>ADMINISTRADOR PUBLICO</option> 
+            <option value=20>IDIOMAS</option> 
+            <option value=21>INGENIERO AGROAMBIENTAL</option> 
+            <option value=22>ARQUITECTO</option> 
+            <option value=23>INGENIERO DE SISTEMAS</option> 
+            <option value=24>ADMINISTRADOR COMERCIAL</option> 
+            <option value=25>INGENIERO MECANICO</option> 
+            <option value=26>ODONTOLOGO</option> 
+            <option value=27>PSICOLOGO</option> 
+            <option value=28>INGENIERO AMBIENTAL</option> 
+            <option value=29>FISIOTERAPISTA</option> 
+            <option value=30>TECNOLOGO - ECONOMIA, ADMINISTRACION, CONTADURIA Y AFINES</option> 
+            <option value=31>TECNICO PROFESIONAL - CIENCIAS DE LA SALUD</option> 
+            <option value=32>FARMACIA</option> 
+            <option value=33>LICENCIADO</option> 
+            <option value=34>GASTRONOMO Y COCINA PROFESIONAL</option> 
+            <option value=35>PILOTO CIVIL</option> 
+            <option value=36>INGENIERO AGROFORESTAL</option> 
+            <option value=37>COMUNICACION SOCIAL</option> 
+            <option value=38>INGENIERO ELECTRICO</option> 
+            <option value=39>ADMINISTRADOR INFORMATICO</option> 
+            <option value=40>QUIMICO</option> 
+            <option value=41>SALUD OCUPACIONAL</option> 
+            <option value=42>ECONOMISTA</option> 
+            <option value=43>ADMINISTRADOR LOGISTICO</option> 
+            <option value=44>SECRETARIA</option> 
+            <option value=45>PRE ESCOLAR</option> 
+            <option value=46>ADMINISTRADOR HOTELERO</option> 
+            <option value=47>TECNICO PROFESIONAL - INGENIERIA, ARQUITECTURA Y URBANISMO</option> 
+            <option value=48>TECNOLOGO - BELLAS ARTES</option> 
+            <option value=49>FONOAUDIOLOGO</option> 
+            <option value=50>INGENIERO AGRICOLA</option> 
+            <option value=51>DISENO INDUSTRIAL</option> 
+            <option value=52>ECOLOGO</option> 
+            <option value=53>TECNOLOGO - CIENCIAS DE LA SALUD</option> 
+            <option value=54>PUBLICISTA</option> 
+            <option value=55>INGENIERO ELECTRONICO</option> 
+            <option value=56>ADMINISTRADOR BANCARIO Y FINANCIERO</option> 
+            <option value=57>MERCADEO</option> 
+            <option value=58>DISENO GRAFICO</option> 
+            <option value=59>TECNICO PROFESIONAL - CIENCIAS SOCIALES, DERECHO Y POLITICA</option> 
+            <option value=60>INGENIERO FINANCIERO</option> 
+            <option value=61>TECNICO PROFESIONAL - CIENCIAS DE LA EDUCACION</option> 
+            <option value=62>TRABAJO SOCIAL</option> 
+            <option value=63>INGENIERO</option>
+            <option value=64>MUSICA INSTRUMENTAL</option> 
+            <option value=65>DISENO DE MODAS</option> 
+            <option value=66>AGROLOGO</option> 
+            <option value=67>FOTOGRAFO</option> 
+            <option value=68>MEDICO DERMATOLOGO</option> 
+            <option value=69>ADMINISTRADOR DE OBRAS CIVILES</option> 
+            <option value=70>MEDICO GENERAL</option> 
+            <option value=71>BIOLOGO</option> 
+            <option value=72>FINANZAS</option> 
+            <option value=73>TEOLOGO</option> 
+            <option value=74>PERIODISTA</option> 
+            <option value=75>COMERCIO EXTERIOR</option> 
+            <option value=76>INGENIERO QUIMICO</option> 
+            <option value=77>INGENIERO DE ALIMENTOS</option> 
+            <option value=78>FILOSOFO</option> 
+            <option value=79>TELECOMUNICACIONES</option> 
+            <option value=80>TECNICO PROFESIONAL - BELLAS ARTES</option> 
+            <option value=81>GEOLOGO</option> 
+            <option value=82>CIENCIAS SOCIALES</option> 
+            <option value=83>TECNOLOGO - HUMANIDADES Y CIENCIAS RELIGIOSAS</option> 
+            <option value=84>INSTRUMENTACION QUIRURGICA</option> 
+            <option value=85>SOCIOLOGO</option> 
+            <option value=86>INGENIERO DE PRODUCCION AGRICOLA</option> 
+            <option value=87>GEOGRAFO</option> 
+            <option value=88>MILITAR</option> 
+            <option value=89>TECNOLOGO - MATEMATICAS Y CIENCIAS NATURALES</option> 
+            <option value=90>ANTROPOLOGO</option>
+            <option value=91>ADMINISTRADOR EN SALUD</option> 
+            <option value=92>BELLAS ARTES</option> 
+            <option value=93>MEDICO OFTALMOLOGO</option> 
+            <option value=94>CRIMINALISTICA</option> 
+            <option value=95>HOTELERIA Y TURISMO</option> 
+            <option value=96>TECNOLOGO - CIENCIAS SOCIALES, DERECHO Y POLITICA</option> 
+            <option value=97>COSMETOLOGO</option> 
+            <option value=98>DEPORTE Y ACTIVIDAD FISICA</option> 
+            <option value=99>MATEMATICO</option> 
+            <option value=100>CINE Y TELEVISION</option> 
+            <option value=101>MICROBIOLOGIA</option> 
+            <option value=102>ESTADISTICO</option> 
+            <option value=103>TECNICO PROFESIONAL - MATEMATICAS Y CIENCIAS NATURALES</option> 
+            <option value=104>CONSTRUCCION</option> 
+            <option value=105>MEDICO PEDIATRA</option> 
+            <option value=106>TECNOLOGO - CIENCIAS DE LA EDUCACION</option> 
+            <option value=107>CIENCIAS</option> 
+            <option value=108>LENGUAS CLASICAS</option> 
+            <option value=109>AGROZOOTECNIO</option> 
+            <option value=110>NEGOCIOS INTERNACIONALES</option> 
+            <option value=111>BACTERIOLOGO</option> 
+            <option value=112>INGENIERO DEL MEDIO AMBIENTE</option> 
+            <option value=113>TERAPIA FISICA</option> 
+            <option value=114>LITERATURA</option> 
+            <option value=115>DECORADOR DE INTERIORES</option> 
+            <option value=116>INGENIERO COMERCIAL</option> 
+            <option value=117>CIENCIAS MILITARES</option>
+            <option value=118>RELACIONES PUBLICAS E INSTITUCIONALES</option> 
+            <option value=119>CIENCIAS POLITICAS</option> 
+            <option value=120>NUTRICION Y DIETETICA</option> 
+            <option value=121>TERAPIA OCUPACIONAL</option> 
+            <option value=122>GERONTOLOGO</option> 
+            <option value=123>INGENIERO DE ACUICULTURA</option> 
+            <option value=124>CIENCIAS DEL DEPORTE</option> 
+            <option value=125>FISICO</option> 
+            <option value=126>INGENIERO ADMINISTRATIVO</option> 
+            <option value=127>INGENIERO CATASTRAL</option> 
+            <option value=128>MEDICO CIRUJANO PLASTICO</option> 
+            <option value=129>TERAPIA RESPIRATORIA</option> 
+            <option value=130>MEDICO OPTOMETRA</option> 
+            <option value=131>RECREACIONISTA</option> 
+            <option value=132>MEDICO CARDIOLOGO</option> 
+            <option value=133>BIOINGENIERO</option> 
+            <option value=134>BIBLIOTECOLOGO</option> 
+            <option value=135>MEDICO LEGAL</option> 
+            <option value=136>LENGUAS MODERNAS</option> 
+            <option value=138>MEDICO GINECOLOGO</option> 
+            <option value=139>HISTORIADOR</option>  
+            <option value=140>MEDICO UROLOGO</option> 
+            <option value=141>TRADUCCION SIMULTANEA</option> 
+            <option value=142>MEDICO NEUROLOGO</option> 
+            <option value=143>RELACIONES INTERNACIONALES</option> 
+            <option value=144>ADMINISTRADOR DEPORTIVO</option>
+            <option value=145>MEDICO RADIOLOGO</option>
+            <option value=146>MEDICO OTORRINORALINGOLOGO</option>
+            <option value=147>MEDICO BACTERIOLOGO</option>
+            <option value=148>INGENIERO PESQUERO</option>
+            <option value=149>NO REPORTA</option>
+            <option value=150>INGENIERO INDUSTRIAL</option>
+            <option value=151>ENFERMERIA</option>
+        </select></p>
+        <br>
+        <p>¿El cliente es empleado?: <input type="radio" name="indClienteEsEmpleado" value=0>No <input type="radio" name="indClienteEsEmpleado" value=1>Si  </p>
+        <br>
+        <p> Región: <select name="Regional">
+            <option selected>...</option>
+            <option value=0>BOGOTA</option>
+            <option value=1>SANTANDER</option>
+            <option value=2>SUR</option>
+            <option value=3>SEPARADO</option>
+            <option value=5>CAFETERA</option> </select></p>
+        <br>
+        <p>Tipo de cliente: <input type="radio" name="TipoClienteDesc" value=0> Cliente Comercialmente Gestionable <input type="radio" name="TipoClienteDesc" value=1>Cliente Convenio</p>
+        <br>
+        <p>ValorActivos: <input type="integer" name="ValorActivos"></p>
+        <br>
+        <p>ValorEgresos: <input type="integer" name="ValorEgresos"></p>
+        <br>
+        <p>ValorIngresos: <input type="integer" name="ValorIngresos"></p>
+        <br>
+        <p>ValorOtrosingresos: <input type="integer" name="ValorOtrosingresos"></p>
+        <br>
+        <p>ValorPatrimonio: <input type="integer" name="ValorPatrimonio"></p>
+        <br>
+        <p>TotalPasivos: <input type="integer" name="TotalPasivos"></p>
+        <br>
+        <p>NumCreditos: <input type="integer" name="NumCreditos"></p>
+        <br>
+        <p>SaldoCreditos: <input type="integer" name="SaldoCreditos"></p>
+        <br>
+        <p>SaldoCarteraVencida: <input type="integer" name="SaldoCarteraVencida"></p>
+        <br>
+        <p>NumeroTC: <input type="integer" name="NumeroTC"></p>
+        <br>
+        <p>SaldoTC: <input type="integer" name="SaldoTC"></p>
+        <br>
+        <p>SaldoTCVencido: <input type="integer" name="SaldoTCVencido"></p>
+        <br>
+        <p>NumeroSobregisrosUso: <input type="integer" name="NumeroSobregisrosUso"></p>
+        <br>
+        <p>SaldoSobregirosUso: <input type="integer" name="SaldoSobregirosUso"></p>
+        <br>
+        <p>SaldoSobregirosVencidos: <input type="integer" name="SaldoSobregirosVencidos"></p>
+        <br>
+        <p>NumeroCuentasAhorroActivas: <input type="integer" name="NumeroCuentasAhorroActivas"></p>
+        <br>
+        <p>SaldoCuentasAhorroActivas: <input type="integer" name="SaldoCuentasAhorroActivas"></p>
+        <br>
+        <p>NumeroCuentasAhorroInactivas: <input type="integer" name="NumeroCuentasAhorroInactivas"></p>
+        <br>
+        <p>SaldoCuentasAhorroInactivas: <input type="integer" name="SaldoCuentasAhorroInactivas"></p>
+        <br>
+        <p>NumeroCuentasCorrienteActivas: <input type="integer" name="NumeroCuentasCorrienteActivas"></p>
+        <br>
+        <p>SaldoCuentasCorrienteActivas: <input type="integer" name="SaldoCuentasCorrienteActivas"></p>
+        <br>
+        <p>NumeroCuentascorrienteInactivas: <input type="integer" name="NumeroCuentascorrienteInactivas"></p>
+        <br>
+        <p>SaldoCuentascorrienteInactivas: <input type="integer" name="SaldoCuentascorrienteInactivas"></p>
+        <br>
+        <p>NumeroCDT: <input type="integer" name="NumeroCDT"></p>
+        <br>
+        <p>SaldoCDT: <input type="integer" name="SaldoCDT"></p>
+        <br>
+        <p>EdNumeroCDATad: <input type="integer" name="NumeroCDAT"></p>
+        <br>
+        <p>SaldoCDAT: <input type="integer" name="SaldoCDAT"></p>
+        <br>
+        <p>SaldoTotalCartera: <input type="integer" name="SaldoTotalCartera"></p>
+        <br>
+        <p>NumeroOperacionesCartera: <input type="integer" name="NumeroOperacionesCartera"></p>
+        <br>
+        <p>NumeroProductosCaptacion: <input type="integer" name="NumeroProductosCaptacion"></p>
+        <br>
+        <p>SaldoTotalCaptaciones: <input type="integer" name="SaldoTotalCaptaciones"></p>
+        <br>
+        <p>NumCreditosVencidos: <input type="integer" name="NumCreditosVencidos"></p>
+        <br>
+        <p>NumeroTCVencidas: <input type="integer" name="NumeroTCVencidas"></p>
+        <br>
+        <p>NumOperacionesCarteraVencida: <input type="integer" name="NumOperacionesCarteraVencida"></p>
+        <br>
+        <p>SaldoTotalCarteraVencida: <input type="integer" name="SaldoTotalCarteraVencida"></p>
+        <br>
+        <input type="submit" value = OK />
+    </form>
+    <br>
+    <p>Resultados obtenidos</p>
+    <table class="center">
+        <tr>
+          <td style="text-align: center; vertical-align: middle;", class="center">
+          {% for table in tables %}
+              {{ table|safe }}
+          {% endfor %}
+          </td>  
+        </tr>
+    </table>
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="../static/img/img3.png" alt="">
+            </div>
+            <h7>BANCO COLOMBIA</h7>
+            <hr>
+            <h8>CONSULTA CHURN</h8>
+        </footer>
+    </div>
+    <br>
+    <br>
+</body>
+</html>
