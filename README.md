@@ -1,19 +1,22 @@
 # ciencia-de-datos
-El jar de la aplicación se encuentra ubicado en el link anterior: NewsWordCount-1.0-SNAPSHOT.jar. La aplicación recibe como entrada 5 argumentos:
-- Directorio de entrada que contiene los datos a analizar. En el cluster se encuentran los datasets cargados en: /user/bigdata01/inputXX
-- Directorio de salida donde se va a guardar el resultado obtenido
-- La tecnología a utilizar: mapreduce o spark
-- Directorio donde se encuentran los stopwords para cada idioma. En el cluster se encuentran cargados en: /user/bigdata01/stopwords/
-- De que sección de la noticia vamos a realizar el análisis: titulos o cuerpos
+La carpeta cuenta con los siguientes documentos o folders:
+- static: Se ecuentra todo lo relacionado al contenido y formato del despliegue web
+- templates: los archivos HTML con contenido y paginación del despleigue web 
+- Presentación del proyecto final: Presentación con los resutaldos obtenidos
+- main.py: Documento de python asociado con el framework flask para realizar todo el despliegue web.
+- modelo2.pkl: Modelo entrenado
+- temp.json: Documento para realizar la prueba de procesamiento en el despliegue web
+- churn.ipynb: Jupyter notebook de todo el procesamiento de los datos y despliegue del modelo.
+- proyectofinal.ipynb: Jupyte notebook con el procesamiento teniendo en cuenta únicamente clientes con fecha de vinculación desde el 2018.
 
-##### MapReduce
+##### Despligue del modelo
+Para el despligue del modelo es necesario utilizar el siguiente comando.
 ```
-hadoop jar NewsWordCount-1.0-SNAPSHOT.jar WordCount {input_dir} {output_dir} mapreduce {stopwords_dir} {titulos/cuerpos}
-```
-##### Spark
-```
-spark-submit --class WordCount NewsWordCount-1.0-SNAPSHOT.jar {input_dir} {output_dir} spark {stopwords_dir} {titulos/cuerpos}
+python main.py
 ```
 
-Los resultados obtenidos para cada escenario de prueba que se ejecutó se encuentran en:
-* https://github.com/ABD-MINE4102/202220-Grupo01/tree/main/tareas/tarea1/NewsWordCount/resultados
+El video de la explicación de la expliación del despligue del modelo se encuentra en el siguiente link.
+* https://youtu.be/2i29sEYh8qk
+
+El video con la sustentación se encuentra en el siguiente link:
+* https://youtu.be/VBKevoPRWxY
